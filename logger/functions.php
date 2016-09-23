@@ -6,12 +6,12 @@
 * copy and paste into a global file
 * and include it.
 *
-* Define a path to where the log-files will be written
-* - define('GLOBAL_LOG_PATH', '...')
+* Define a path to where the log-files will be written, like;
+* - define('GLOBAL_LOG_PATH', dirname(__FILE__).'/logs');
 *
 * Examples;
 * - logger('$var1 = '.$var1');
-* - logger('debug place 1 has $_POST = '.var_export($_POST,TRUE))
+* - logger('debug place 1 has $_POST = '.var_export($_POST,TRUE));
 *
 * Git; https://github.com/fredrikspannar/php-snippets
 */
