@@ -12,3 +12,7 @@ Use it to log variables when debugging. Useful if you don't use any framework.
 ### Examples
 - logger('$var1 = '.$var1');
 - logger('debug place 1 has $_POST = '.var_export($_POST,TRUE));
+
+## Laravel
+
+Snippets for Laravel-applications. See README in laravel/
