@@ -38,11 +38,8 @@ $env = $app->detectEnvironment(function(){
 
         // load the .env
         if ( !empty($localEnv) ) {
-    	    $setEnv = trim(file_get_contents($environmentPath.$localEnv));	    
-            putenv("$setEnv");
-
-        	$dotenv = new Dotenv\Dotenv($environmentPath, $localEnv);
-        	$dotenv->load();
+            $dotenv = new Dotenv\Dotenv($environmentPath, $localEnv);
+            $dotenv->overload(); // !! USE ONLY OVERLOAD. NO PUTENV(...) OR ELSE SESSION COOKIE WILL MESS UP
         }
     }
 });
